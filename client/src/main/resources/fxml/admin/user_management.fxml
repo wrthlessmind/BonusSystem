@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bonussystem.client.controller.admin.UserManagementController">
+    <children>
+        <Text layoutX="205.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Управление пользователями" textAlignment="CENTER" wrappingWidth="340.0">
+            <font><Font name="Arial" size="24.0" /></font>
+        </Text>
+        <TableView fx:id="userTable" layoutX="16.0" layoutY="54.0" prefHeight="526.0" prefWidth="550.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="61.6" text="ID" />
+                <TableColumn fx:id="colLogin" prefWidth="190.0" text="Логин" />
+                <TableColumn fx:id="colRole" prefWidth="150.0" text="Роль" />
+                <TableColumn fx:id="colStatus" prefWidth="148.0" text="Статус" />
+            </columns>
+        </TableView>
+        <Button layoutX="580.0" layoutY="54.0" mnemonicParsing="false" onAction="#handleBlockUser" prefHeight="43.0" prefWidth="155.0" text="Заблокировать">
+            <font><Font name="Arial" size="16.0" /></font>
+        </Button>
+        <Button layoutX="580.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleUnblockUser" prefHeight="43.0" prefWidth="155.0" text="Разблокировать">
+            <font><Font name="Arial" size="16.0" /></font>
+        </Button>
+        <Button layoutX="580.0" layoutY="166.0" mnemonicParsing="false" onAction="#handleDeleteUser" prefHeight="43.0" prefWidth="155.0" text="Удалить">
+            <font><Font name="Arial" size="16.0" /></font>
+        </Button>
+        <Button layoutX="580.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleRefresh" prefHeight="43.0" prefWidth="155.0" text="Обновить">
+            <font><Font name="Arial" size="16.0" /></font>
+        </Button>
+    </children>
+</AnchorPane>

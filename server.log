@@ -1,0 +1,717 @@
+2026-05-06 20:17:25 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 20:17:25 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 20:22:58 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 20:22:58 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 20:27:06 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 20:27:06 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 20:36:06 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 20:36:06 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 20:42:48 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 20:42:48 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 20:44:43 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 20:44:43 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 21:07:39 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 21:07:39 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 21:09:39 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 21:09:39 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 21:20:47 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 21:20:47 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 21:20:51 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 21:20:51 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-06 21:21:50 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-06 21:21:50 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-07 17:33:37 [main] INFO  com.bonussystem.server.util.FileLogger - Подключение к базе данных установлено
+2026-05-07 17:33:37 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-09 18:03:48 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-09 18:18:15 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-09 18:18:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-09 18:18:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 18:18:31 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Ошибка обработки запроса: LOGIN
+java.lang.RuntimeException: Пользователь с таким логином не найден
+	at com.bonussystem.server.service.UserService.login(UserService.java:26)
+	at com.bonussystem.server.tcp.RequestRouter.handleLogin(RequestRouter.java:97)
+	at com.bonussystem.server.tcp.RequestRouter.route(RequestRouter.java:36)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-09 18:18:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: ERROR
+2026-05-09 18:18:44 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: REGISTER
+2026-05-09 18:18:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Новый пользователь зарегистрирован: test
+2026-05-09 18:18:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:18:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 18:18:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test
+2026-05-09 18:18:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:19:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: UPDATE_PROFILE
+2026-05-09 18:19:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:19:29 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-09 18:19:42 [Thread-1] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-09 18:19:42 [Thread-1] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 18:19:42 [Thread-1] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-09 18:19:42 [Thread-1] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:19:55 [Thread-1] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-09 18:23:14 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-09 18:23:28 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-09 18:23:28 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 18:23:28 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Ошибка обработки запроса: LOGIN
+java.lang.RuntimeException: Пользователь с таким логином не найден
+	at com.bonussystem.server.service.UserService.login(UserService.java:26)
+	at com.bonussystem.server.tcp.RequestRouter.handleLogin(RequestRouter.java:97)
+	at com.bonussystem.server.tcp.RequestRouter.route(RequestRouter.java:36)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-09 18:23:28 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: ERROR
+2026-05-09 18:24:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 18:24:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-09 18:24:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:24:02 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 18:24:02 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:24:02 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 18:24:02 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:24:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 18:24:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:24:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 18:24:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 18:25:16 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-09 19:00:22 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-09 19:00:35 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-09 19:00:35 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 19:00:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-09 19:00:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:00:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:00:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:00:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:00:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:00:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:00:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:00:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:00:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:16 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-09 19:04:30 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-09 19:04:43 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-09 19:04:43 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 19:04:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-09 19:04:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:04:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:04:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:04:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:04:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:04:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:04:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:04:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:04:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:04:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:04:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:04:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:04:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:57 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:04:57 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:04:57 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:04:57 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:14 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:14 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:14 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:14 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:15 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:15 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:15 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:15 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:19 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 19:05:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-09 19:05:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:59 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:05:59 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:05:59 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:05:59 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:06:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:06:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:06:10 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:16 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:06:16 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:16 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:16 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:17 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:21 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:21 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:21 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:06:21 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:06:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:26 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:06:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:06:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:06:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: REGISTER
+2026-05-09 19:06:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Новый пользователь зарегистрирован: testE
+2026-05-09 19:06:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 19:07:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: testE
+2026-05-09 19:07:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:09 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:09 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:16 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:16 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:18 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:18 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:20 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:20 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:24 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:24 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:27 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:28 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:28 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:30 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:30 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:33 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:33 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:34 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:34 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:35 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:35 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:39 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 19:07:39 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:41 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:41 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:46 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:46 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:50 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:07:50 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:07:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:07:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: REGISTER
+2026-05-09 19:08:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Новый пользователь зарегистрирован: testR
+2026-05-09 19:08:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 19:08:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: testR
+2026-05-09 19:08:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:32 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:08:32 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:36 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:39 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 19:08:39 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 19:08:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-09 19:08:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:08:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:08:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:08:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:08:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:53 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:08:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:08:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:08:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:08:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:08:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:09:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:09:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:09:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:09:06 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:09:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:09:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:09:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:09:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:11 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:09:11 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:11 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 19:09:11 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_USERS
+2026-05-09 19:09:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:09:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 19:09:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 19:11:17 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-09 20:02:42 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-09 20:02:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-09 20:02:54 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 20:02:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: testE
+2026-05-09 20:02:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:02:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 20:02:55 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:02:59 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 20:02:59 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 20:03:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:01 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 20:03:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 20:03:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:13 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:13 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:13 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:13 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:22 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 20:03:23 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:24 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 20:03:24 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:24 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_PERIODS
+2026-05-09 20:03:24 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:03:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:42 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 20:03:42 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: testR
+2026-05-09 20:03:42 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:42 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 20:03:42 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_KPI_INDICATORS
+2026-05-09 20:03:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:03:47 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 20:03:47 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-09 20:04:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-09 20:04:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 20:04:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:04:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 20:04:08 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:09 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-09 20:04:09 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:09 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-09 20:04:09 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-09 20:04:20 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-14 18:45:17 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-14 18:46:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-14 18:46:29 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-14 18:46:30 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Ошибка обработки запроса: LOGIN
+java.lang.RuntimeException: Пользователь с таким логином не найден
+	at com.bonussystem.server.service.UserService.login(UserService.java:29)
+	at com.bonussystem.server.tcp.RequestRouter.handleLogin(RequestRouter.java:98)
+	at com.bonussystem.server.tcp.RequestRouter.route(RequestRouter.java:36)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-14 18:46:30 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: ERROR
+2026-05-14 18:47:05 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-05-14 19:26:48 [main] INFO  com.bonussystem.server.util.FileLogger - Сервер запущен на порту 5555
+2026-05-14 19:27:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Клиент подключён: 127.0.0.1
+2026-05-14 19:27:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: REGISTER
+2026-05-14 19:27:39 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Новый пользователь зарегистрирован: test1
+2026-05-14 19:27:39 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:27:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-14 19:27:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-14 19:27:48 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:27:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:27:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:27:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:27:49 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:28:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:28:07 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:28:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:28:37 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:28:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:28:38 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:28:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:28:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:28:45 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:11 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: ADD_EMPLOYEE
+2026-05-14 19:29:11 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:29:12 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:18 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:29:18 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:18 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:29:18 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: ADD_DEPARTMENT
+2026-05-14 19:29:25 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Ошибка обработки запроса: ADD_DEPARTMENT
+java.lang.RuntimeException: Ошибка выполнения вставки: INSERT INTO departments (name, head_user_id) VALUES (?, ?)
+	at com.bonussystem.server.dao.BaseDao.executeInsertAndGetKey(BaseDao.java:53)
+	at com.bonussystem.server.dao.DepartmentDao.insert(DepartmentDao.java:34)
+	at com.bonussystem.server.service.DepartmentService.addDepartment(DepartmentService.java:19)
+	at com.bonussystem.server.tcp.RequestRouter.handleAddDepartment(RequestRouter.java:190)
+	at com.bonussystem.server.tcp.RequestRouter.route(RequestRouter.java:52)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`bonussystem`.`departments`, CONSTRAINT `fk_departments_head_user` FOREIGN KEY (`head_user_id`) REFERENCES `users` (`user_id`) ON DELETE SET NULL ON UPDATE CASCADE)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at com.bonussystem.server.dao.BaseDao.executeInsertAndGetKey(BaseDao.java:45)
+	... 6 more
+2026-05-14 19:29:25 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: ERROR
+2026-05-14 19:29:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: ADD_DEPARTMENT
+2026-05-14 19:29:31 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Ошибка обработки запроса: ADD_DEPARTMENT
+java.lang.RuntimeException: Ошибка выполнения вставки: INSERT INTO departments (name, head_user_id) VALUES (?, ?)
+	at com.bonussystem.server.dao.BaseDao.executeInsertAndGetKey(BaseDao.java:53)
+	at com.bonussystem.server.dao.DepartmentDao.insert(DepartmentDao.java:34)
+	at com.bonussystem.server.service.DepartmentService.addDepartment(DepartmentService.java:19)
+	at com.bonussystem.server.tcp.RequestRouter.handleAddDepartment(RequestRouter.java:190)
+	at com.bonussystem.server.tcp.RequestRouter.route(RequestRouter.java:52)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`bonussystem`.`departments`, CONSTRAINT `fk_departments_head_user` FOREIGN KEY (`head_user_id`) REFERENCES `users` (`user_id`) ON DELETE SET NULL ON UPDATE CASCADE)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at com.bonussystem.server.dao.BaseDao.executeInsertAndGetKey(BaseDao.java:45)
+	... 6 more
+2026-05-14 19:29:31 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: ERROR
+2026-05-14 19:29:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:29:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:29:52 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:29:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:29:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:29:58 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:30:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:30:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:30:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:30:00 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:31:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: REGISTER
+2026-05-14 19:31:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Новый пользователь зарегистрирован: test2
+2026-05-14 19:31:56 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:32:02 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: LOGIN
+2026-05-14 19:32:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Пользователь авторизован: test1
+2026-05-14 19:32:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:32:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:32:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:32:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:32:03 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:32:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_EMPLOYEES
+2026-05-14 19:32:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:32:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: GET_ALL_DEPARTMENTS
+2026-05-14 19:32:04 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: OK
+2026-05-14 19:32:14 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Запрос от 127.0.0.1: ADD_DEPARTMENT
+2026-05-14 19:32:14 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Ошибка обработки запроса: ADD_DEPARTMENT
+java.lang.RuntimeException: Ошибка выполнения вставки: INSERT INTO departments (name, head_user_id) VALUES (?, ?)
+	at com.bonussystem.server.dao.BaseDao.executeInsertAndGetKey(BaseDao.java:53)
+	at com.bonussystem.server.dao.DepartmentDao.insert(DepartmentDao.java:34)
+	at com.bonussystem.server.service.DepartmentService.addDepartment(DepartmentService.java:19)
+	at com.bonussystem.server.tcp.RequestRouter.handleAddDepartment(RequestRouter.java:190)
+	at com.bonussystem.server.tcp.RequestRouter.route(RequestRouter.java:52)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:39)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.sql.SQLIntegrityConstraintViolationException: Cannot add or update a child row: a foreign key constraint fails (`bonussystem`.`departments`, CONSTRAINT `fk_departments_head_user` FOREIGN KEY (`head_user_id`) REFERENCES `users` (`user_id`) ON DELETE SET NULL ON UPDATE CASCADE)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:118)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988)
+	at com.bonussystem.server.dao.BaseDao.executeInsertAndGetKey(BaseDao.java:45)
+	... 6 more
+2026-05-14 19:32:14 [Thread-0] INFO  com.bonussystem.server.util.FileLogger - Ответ для 127.0.0.1: ERROR
+2026-05-14 19:33:33 [Thread-0] ERROR com.bonussystem.server.util.FileLogger - Клиент отключён: 127.0.0.1
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:318)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350)
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393)
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217)
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171)
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188)
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160)
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347)
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436)
+	at com.bonussystem.server.tcp.ClientHandler.run(ClientHandler.java:35)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

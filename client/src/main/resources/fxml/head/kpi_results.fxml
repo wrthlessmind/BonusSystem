@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="600.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bonussystem.client.controller.head.KpiResultController">
+    <children>
+        <Text layoutX="200.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Внесение результатов KPI" textAlignment="CENTER" wrappingWidth="350.0">
+            <font><Font name="Arial" size="20.0" /></font>
+        </Text>
+
+        <Text layoutX="12.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Год:">
+            <font><Font name="Arial" size="14.0" /></font>
+        </Text>
+        <TextField fx:id="yearField" layoutX="12.0" layoutY="62.0" prefHeight="26.0" prefWidth="150.0" promptText="Например 2025" />
+        <Button layoutX="172.0" layoutY="62.0" mnemonicParsing="false" onAction="#handleLoadResults" prefHeight="26.0" prefWidth="110.0" text="Загрузить">
+            <font><Font name="Arial" size="13.0" /></font>
+        </Button>
+
+        <TableView fx:id="resultTable" layoutX="12.0" layoutY="98.0" prefHeight="350.0" prefWidth="726.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="45.0" text="ID" />
+                <TableColumn fx:id="colEmployeeName" prefWidth="190.0" text="Сотрудник" />
+                <TableColumn fx:id="colKpiName" prefWidth="160.0" text="KPI" />
+                <TableColumn fx:id="colYear" prefWidth="60.0" text="Год" />
+                <TableColumn fx:id="colActualValue" prefWidth="110.0" text="Факт. значение" />
+                <TableColumn fx:id="colNote" prefWidth="161.0" text="Примечание" />
+            </columns>
+        </TableView>
+
+        <Text layoutX="12.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Сотрудник:">
+            <font><Font name="Arial" size="13.0" /></font>
+        </Text>
+        <ComboBox fx:id="employeeComboBox" layoutX="12.0" layoutY="506.0" prefHeight="26.0" prefWidth="180.0" />
+
+        <Text layoutX="202.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KPI:">
+            <font><Font name="Arial" size="13.0" /></font>
+        </Text>
+        <ComboBox fx:id="kpiComboBox" layoutX="202.0" layoutY="506.0" prefHeight="26.0" prefWidth="180.0" />
+
+        <Text layoutX="392.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Факт. значение:">
+            <font><Font name="Arial" size="13.0" /></font>
+        </Text>
+        <TextField fx:id="actualValueField" layoutX="392.0" layoutY="506.0" prefHeight="26.0" prefWidth="100.0" />
+
+        <Text layoutX="502.0" layoutY="500.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Примечание:">
+            <font><Font name="Arial" size="13.0" /></font>
+        </Text>
+        <TextField fx:id="noteField" layoutX="502.0" layoutY="506.0" prefHeight="26.0" prefWidth="236.0" />
+
+        <Button layoutX="12.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleAdd" prefHeight="36.0" prefWidth="110.0" text="Добавить">
+            <font><Font name="Arial" size="14.0" /></font>
+        </Button>
+        <Button layoutX="134.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="36.0" prefWidth="110.0" text="Изменить">
+            <font><Font name="Arial" size="14.0" /></font>
+        </Button>
+        <Button layoutX="256.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="36.0" prefWidth="110.0" text="Удалить">
+            <font><Font name="Arial" size="14.0" /></font>
+        </Button>
+        <Button layoutX="628.0" layoutY="550.0" mnemonicParsing="false" onAction="#handleBack" prefHeight="36.0" prefWidth="110.0" text="Назад">
+            <font><Font name="Arial" size="14.0" /></font>
+        </Button>
+    </children>
+</AnchorPane>
